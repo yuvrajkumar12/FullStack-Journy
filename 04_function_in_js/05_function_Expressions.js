@@ -33,3 +33,28 @@ let sum=function(a,b){
     console.log("hello");
  }
  multiple1(function() {console.log("nameste")},23);
+ //Higher order Return 
+let odd = function (n) {
+    console.log(!(n % 2 == 0));
+}
+
+let even = function (n) {
+    console.log(n % 2 == 0);
+}
+
+function oddOrEvenFactory(request) {
+    if (request == "odd") {
+        return odd;
+    } else if (request == "even") {
+        return even;
+    } else {
+        console.log("Wrong request");
+    }
+}
+
+let request =  "odd";
+let fun = oddOrEvenFactory(request);
+
+if (fun) {
+    fun(3);
+}
