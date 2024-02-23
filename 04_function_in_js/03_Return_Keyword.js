@@ -13,3 +13,14 @@ function sum(a,b){
 
 }
 console.log(sum(5,23));
+/**Create a Function that return the concatenation of all string in array. */
+let str=["hi", "Hello","bye","!"];
+function  concatenation(str){
+    let result="";
+    for(let i=0;i<str.length;i++){
+        result+=str[i];
+    }
+    return result;
+
+}
+console.log(concatenation(str));
