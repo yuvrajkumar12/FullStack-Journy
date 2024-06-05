@@ -29,17 +29,16 @@ const student={
         return this.marks;
     },
     getInfo: function() {
-        setTimeout( ()=>{
-            console.log(this);
+        setTimeout(()=>{
+            console.log(this);//student
         },2000);
     },
     getInfo2: function() {
-        setTimeout( function(){
-            console.log(this);
+        setTimeout(function() {
+            console.log(this);//windoe
         },2000);
     },
 };
 console.log(student.getName());
-console.log(student.getMarks());
 console.log(student.getInfo());
 console.log(student.getInfo2());
