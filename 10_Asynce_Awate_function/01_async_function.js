@@ -15,4 +15,5 @@ gride()
  let demo=async()=>{
     return 5;
  };
- demo();
+ demo();//promise hamessa promise return hoga
+ 

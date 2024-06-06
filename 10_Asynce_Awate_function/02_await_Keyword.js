@@ -19,7 +19,7 @@ function getNum(){
 }
 
 async function demo(){
-    try {
+    try {//handling error
         await getNum();
         await getNum();
         await getNum();
@@ -30,3 +30,4 @@ async function demo(){
 }
 demo();
 //jaha promise used hote hai wha hunm async v used krte hai
+//Agar koi promise reject tota hai to usko kaise handle krte hai
