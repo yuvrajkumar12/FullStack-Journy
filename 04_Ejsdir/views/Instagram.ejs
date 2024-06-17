@@ -1,0 +1,13 @@
+<%- include("includes/head.ejs")%>
+<body>
+    <p>followers: <%= data.followers %>&nbsp;&nbsp;&nbsp;following: <%= data.following %></p><br>
+<% for (let post of data.posts) { %>
+    <img src="<%= post.image %>" alt="some image">
+    <p>
+        likes: <%= post.likes %>&nbsp;&nbsp;&nbsp;comments: <%= post.comments %>
+    </p>
+<% } %>
+<%-include("includes/footer.ejs")%>    
+</body>
+<script src="/app.js"></script>
+</html>
